@@ -2,4 +2,8 @@ function getFirstSelector(selector) {
   
 }
 
-function 
+function nestedTarget() {
+  
+}
+
+
