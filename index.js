@@ -3,18 +3,18 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.querySelector( '#nested .target' )
+  return document.querySelector('#nested .target')
 }
 
 
 function increaseRankBy(n) {
-    const rankedLists = document.querySelectorAll( '.ranked-list' )
+    const rankedLists = document.querySelectorAll('.ranked-list')
 
-  for ( let i = 0, l = rankedLists.length; i < l; i++ ) {
-    let children = rankedLists[ i ].children
+  for (let i = 0, len = rankedLists.length; i < len; i++) {
+    let children = rankedLists[i].children
 
-    for ( let j = 0, k = children.length; j < k; j++ ) {
-      children[ j ].innerHTML = parseInt( children[ j ].innerHTML ) + n
+    for (let i = 0, len = children.length; i < len; i++) {
+      children[i].innerHTML = parseInt(children[i].innerHTML) + n
     }
   }
   
